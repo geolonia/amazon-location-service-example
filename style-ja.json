@@ -6100,7 +6100,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6135,7 +6135,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "center",
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6178,7 +6178,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "center",
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6220,7 +6220,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "center",
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -6262,7 +6262,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "center",
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6304,7 +6304,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "center",
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6346,7 +6346,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "center",
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6388,7 +6388,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "center",
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6430,7 +6430,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "center",
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6479,7 +6479,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -6505,7 +6505,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 800,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6536,7 +6536,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 800,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6579,7 +6579,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 800,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6622,7 +6622,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 800,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6653,7 +6653,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -6680,7 +6680,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -6710,7 +6710,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6742,7 +6742,7 @@
         "symbol-placement": "line",
         "symbol-spacing": 1000,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6774,7 +6774,7 @@
         "symbol-placement": "line",
         "symbol-spacing": 1000,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6806,7 +6806,7 @@
         "symbol-placement": "line",
         "symbol-spacing": 1000,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6836,7 +6836,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6867,7 +6867,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6898,7 +6898,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6929,7 +6929,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6959,7 +6959,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -6992,7 +6992,7 @@
         "symbol-placement": "line",
         "symbol-spacing": 1000,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -7023,7 +7023,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -7049,7 +7049,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -7075,7 +7075,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -7101,7 +7101,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -7132,7 +7132,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -7186,7 +7186,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -7240,7 +7240,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -7294,7 +7294,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -7348,7 +7348,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -7400,7 +7400,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 1000,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -7429,7 +7429,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 1000,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -7458,7 +7458,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -7496,7 +7496,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -7535,7 +7535,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -7589,7 +7589,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -7643,7 +7643,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -7708,7 +7708,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -7773,7 +7773,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Bold"
         ],
@@ -7838,7 +7838,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Bold"
         ],
@@ -7903,7 +7903,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Bold"
         ],
@@ -7968,7 +7968,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -8032,7 +8032,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -8096,7 +8096,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Bold"
         ],
@@ -8160,7 +8160,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Bold"
         ],
@@ -8224,7 +8224,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Bold"
         ],
@@ -8290,7 +8290,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -8347,7 +8347,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -8404,7 +8404,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -8461,7 +8461,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -8518,7 +8518,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -8576,7 +8576,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -8634,7 +8634,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -8691,7 +8691,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -8748,7 +8748,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -8806,7 +8806,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -8864,7 +8864,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -8921,7 +8921,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -8978,7 +8978,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9036,7 +9036,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9094,7 +9094,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9152,7 +9152,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9210,7 +9210,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9268,7 +9268,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9326,7 +9326,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9384,7 +9384,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9442,7 +9442,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9500,7 +9500,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9558,7 +9558,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9615,7 +9615,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9672,7 +9672,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9730,7 +9730,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9788,7 +9788,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9845,7 +9845,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9902,7 +9902,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -9959,7 +9959,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10016,7 +10016,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10073,7 +10073,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10130,7 +10130,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10187,7 +10187,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10244,7 +10244,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10301,7 +10301,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10358,7 +10358,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10415,7 +10415,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10472,7 +10472,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10529,7 +10529,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10586,7 +10586,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10643,7 +10643,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10700,7 +10700,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10757,7 +10757,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10814,7 +10814,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10871,7 +10871,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10928,7 +10928,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -10985,7 +10985,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11042,7 +11042,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11099,7 +11099,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11156,7 +11156,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11213,7 +11213,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11270,7 +11270,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11327,7 +11327,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11384,7 +11384,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11441,7 +11441,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11498,7 +11498,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11555,7 +11555,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11612,7 +11612,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11669,7 +11669,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11726,7 +11726,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11783,7 +11783,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11840,7 +11840,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11897,7 +11897,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -11954,7 +11954,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12012,7 +12012,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12069,7 +12069,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12126,7 +12126,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12181,7 +12181,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12205,7 +12205,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12244,7 +12244,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12297,7 +12297,7 @@
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
         "symbol-spacing": 400,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12336,7 +12336,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12361,7 +12361,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12386,7 +12386,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12411,7 +12411,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12436,7 +12436,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12461,7 +12461,7 @@
       "layout": {
         "symbol-avoid-edges": false,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12486,7 +12486,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12511,7 +12511,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12536,7 +12536,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12572,7 +12572,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12608,7 +12608,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12633,7 +12633,7 @@
       "layout": {
         "symbol-avoid-edges": false,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12658,7 +12658,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12683,7 +12683,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12708,7 +12708,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12733,7 +12733,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12758,7 +12758,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12783,7 +12783,7 @@
       "layout": {
         "symbol-avoid-edges": false,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12808,7 +12808,7 @@
       "layout": {
         "symbol-avoid-edges": false,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12839,7 +12839,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "center",
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12875,7 +12875,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12900,7 +12900,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12925,7 +12925,7 @@
       "layout": {
         "symbol-avoid-edges": false,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12961,7 +12961,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -12997,7 +12997,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13038,7 +13038,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13069,7 +13069,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13100,7 +13100,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13172,7 +13172,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13244,7 +13244,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13316,7 +13316,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13388,7 +13388,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13460,7 +13460,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13533,7 +13533,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "center",
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13601,7 +13601,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom",
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13701,7 +13701,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom",
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13780,7 +13780,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13822,7 +13822,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13864,7 +13864,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13906,7 +13906,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13948,7 +13948,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -13990,7 +13990,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14032,7 +14032,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14077,7 +14077,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14115,7 +14115,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14153,7 +14153,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14191,7 +14191,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14244,7 +14244,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14282,7 +14282,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14320,7 +14320,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14358,7 +14358,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14408,7 +14408,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Serif Regular"
         ],
@@ -14462,7 +14462,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Serif Regular"
         ],
@@ -14516,7 +14516,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Serif Regular"
         ],
@@ -14574,7 +14574,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Serif Regular"
         ],
@@ -14632,7 +14632,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Serif Regular"
         ],
@@ -14694,7 +14694,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14747,7 +14747,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14800,7 +14800,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14853,7 +14853,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14906,7 +14906,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -14970,7 +14970,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -15034,7 +15034,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -15098,7 +15098,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -15162,7 +15162,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -15226,7 +15226,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -15290,7 +15290,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Regular"
         ],
@@ -15351,7 +15351,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Serif Regular"
         ],
@@ -15406,7 +15406,7 @@
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "center",
-        "text-field": "{_name_global}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Serif Regular"
         ],
@@ -15457,7 +15457,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-anchor": "center",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -15507,7 +15507,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-anchor": "center",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -15558,7 +15558,7 @@
       ],
       "id": "Landform/label/Round small",
       "layout": {
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Roboto Condensed Light Italic"
         ],
@@ -15618,7 +15618,7 @@
       ],
       "id": "Landform/label/Round medium",
       "layout": {
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Roboto Condensed Light Italic"
         ],
@@ -15682,7 +15682,7 @@
       ],
       "id": "Landform/label/Round large",
       "layout": {
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Roboto Condensed Light Italic"
         ],
@@ -15747,7 +15747,7 @@
       ],
       "id": "Landform/label/Round x large",
       "layout": {
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Roboto Condensed Light Italic"
         ],
@@ -15814,7 +15814,7 @@
       "layout": {
         "symbol-placement": "line",
         "symbol-spacing": 1000,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Roboto Condensed Light Italic"
         ],
@@ -15874,7 +15874,7 @@
       ],
       "id": "Landform/label/Oblong small point",
       "layout": {
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Roboto Condensed Light Italic"
         ],
@@ -15936,7 +15936,7 @@
       "layout": {
         "symbol-placement": "line",
         "symbol-spacing": 1000,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Roboto Condensed Light Italic"
         ],
@@ -16000,7 +16000,7 @@
       ],
       "id": "Landform/label/Oblong medium point",
       "layout": {
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Roboto Condensed Light Italic"
         ],
@@ -16066,7 +16066,7 @@
       "layout": {
         "symbol-placement": "line",
         "symbol-spacing": 1000,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Roboto Condensed Light Italic"
         ],
@@ -16131,7 +16131,7 @@
       ],
       "id": "Landform/label/Oblong large point",
       "layout": {
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Roboto Condensed Light Italic"
         ],
@@ -16198,7 +16198,7 @@
       "layout": {
         "symbol-placement": "line",
         "symbol-spacing": 1000,
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Roboto Condensed Light Italic"
         ],
@@ -16263,7 +16263,7 @@
       ],
       "id": "Landform/label/Oblong x large point",
       "layout": {
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Roboto Condensed Light Italic"
         ],
@@ -16338,7 +16338,7 @@
       "layout": {
         "symbol-avoid-edges": true,
         "text-anchor": "center",
-        "text-field": "{_name}",
+        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
         "text-font": [
           "Noto Serif Regular"
         ],
