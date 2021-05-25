@@ -12,13 +12,8 @@
           padding: 5px;
           font-size: 14px;
         }
-        .popup_title {
-          font-size: 16px;
-          font-weight: bold;
-          padding: 10px;
-        }
         .section_title {
-          min-width: 60px;
+          min-width: 90px;
         }
       </style>
     </head>
@@ -101,10 +96,14 @@
               const features = map.queryRenderedFeatures(event.point)
               const feature = features.find(({layer}) => layer.id === "points")
 
-              const name = feature.properties["名称"]
-              const hours = feature.properties["利用時間"]
+              console.log(feature)
 
-              const table = `<div class="popup_title">施設情報</div><table><tr><td class="section_title">名称</td><td>${name}</td></tr><tr><td class="section_title">利用時間</td><td>${hours ? hours : "不明"}</td></tr></table>`
+              const name = feature.properties["保育園名"]
+              const hoursStart = feature.properties["標準時間開始時間"]
+              const hoursEnd = feature.properties["標準時間終了時間"]
+              const age = feature.properties["入園可能月齢"]
+
+              const table = `<table><tr><td class="section_title">名称</td><td>${name}</td></tr><tr><td class="section_title">利用時間</td><td>${hoursStart}~${hoursEnd}</td></tr><tr><td class="section_title">入園可能月齢</td><td>${age}</td></tr></table>`
 
               popup
                 .setHTML(table)

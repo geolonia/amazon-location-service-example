@@ -10,7 +10,7 @@
       "type": "vector"
     },
     "hoikuen_minatoku_tokyo": {
-      "data": "",
+      "data": "https://geolonia.github.io/amazon-location-service-add-custom-layer/data/minatoku_hoikuen.json",
       "type": "geojson"
     }
   },
