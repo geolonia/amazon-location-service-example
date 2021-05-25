@@ -8,12 +8,11 @@ AmazonLocationService が提供している地図タイルに、Geolonia Embed A
 
 ### デフォルト(Esri Light)
 
-- [https://geolonia.github.io/amazon-location-service-add-custom-layer/map.html](https://geolonia.github.io/amazon-location-service-add-custom-layer/map.html)
+- <a href="https://geolonia.github.io/amazon-location-service-add-custom-layer/map.html" target="_blank" rel="noopener noreferrer">https://geolonia.github.io/amazon-location-service-add-custom-layer/map.html</a>
 
 ### 日本語化
 
-- [https://geolonia.github.io/amazon-location-service-add-custom-layer/map_ja.html](https://geolonia.github.io/amazon-location-service-add-custom-layer/map.html)
-
+- <a href="https://geolonia.github.io/amazon-location-service-add-custom-layer/map.html" target="_blank" rel="noopener noreferrer">https://geolonia.github.io/amazon-location-service-add-custom-layer/map.html</a>
 
 ## 参考
 
