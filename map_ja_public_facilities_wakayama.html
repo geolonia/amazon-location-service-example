@@ -1,28 +1,24 @@
 <html>
     <head>
       <style>
-        html, body {
+        html, body, #map {
           width: 100%;
           height: 100%;
           margin: 0;
           padding: 0;
-          background-color: #555555;
-        }
-        .left {
-          margin-right: 400px;
-          height: 100%;
           background-color: #FFFFFF;
         }
-        .right
-        {
-          margin-left: calc(100% - 400px);
-          position: absolute;
-          top: 0;
-          padding: 8px 16px;
-          height: calc(100% - 48px);
-          width: calc(400px - 32px);
-          overflow: scroll;
-          color: #FFFFFF;
+        td {
+          padding: 5px;
+          font-size: 14px;
+        }
+        .popup_title {
+          font-size: 16px;
+          font-weight: bold;
+          padding: 10px;
+        }
+        .section_title {
+          min-width: 60px;
         }
       </style>
     </head>
@@ -36,7 +32,7 @@
         data-marker="off"
         data-hash="on" 
         class="left"
-      ></div>      <pre id="json" class="right"></pre>
+      ></div>
       <script src="https://cdn.geolonia.com/v1/embed?geolonia-api-key=YOUR-API-KEY"></script>
 
       <script src="https://sdk.amazonaws.com/js/aws-sdk-2.775.0.min.js"></script>
@@ -96,11 +92,25 @@
             transformRequest,
           });
 
+          const popup = new geolonia.Popup({offset: 10, anchor: 'bottom', maxWidth: '260px'})
+
           map.on('load', () => {
-            const dumpFeature = event => {
+
+            const openPopup = event => {
+              
               const features = map.queryRenderedFeatures(event.point)
-              const jsonContainer = document.getElementById('json')
-              jsonContainer.innerText = JSON.stringify(features, null, '  ')
+              const feature = features.find(({layer}) => layer.id === "points")
+
+              const name = feature.properties["名称"]
+              const hours = feature.properties["利用時間"]
+
+              const table = `<div class="popup_title">施設情報</div><table><tr><td class="section_title">名称</td><td>${name}</td></tr><tr><td class="section_title">利用時間</td><td>${hours ? hours : "不明"}</td></tr></table>`
+
+              popup
+                .setHTML(table)
+                .setLngLat(event.lngLat)
+                .addTo(map);
+
             }
 
             const mouseEnter = () => {
@@ -111,8 +121,9 @@
               map.getCanvas().style.cursor = ''
             }
 
+            map.on('click', 'points', openPopup)
+
             map.getStyle().layers.forEach( (item) => {
-              map.on('click', item.id, dumpFeature)
               map.on('mouseenter', item.id, mouseEnter)
               map.on('mouseleave', item.id, mouseLeave)
             })
