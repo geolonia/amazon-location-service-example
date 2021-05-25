@@ -4,7 +4,15 @@ AmazonLocationService が提供している地図タイルに、Geolonia Embed A
 
 ## デモ
 
-[https://geolonia.github.io/sandbox-amazon-location-service/](https://geolonia.github.io/sandbox-amazon-location-service/)
+このデモのスタイルは、AmazonLocation で利用できる `Esri Light` というスタイルをベースにしています。
+
+### デフォルト(Esri Light)
+
+- https://geolonia.github.io/amazon-location-service-add-custom-layer/map.html
+
+### 日本語化
+
+- https://geolonia.github.io/amazon-location-service-add-custom-layer/map-ja.html
 
 
 ## 参考
