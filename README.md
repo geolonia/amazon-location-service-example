@@ -18,9 +18,6 @@ AmazonLocationService が提供している地図タイルに、Geolonia Embed A
 
 ### 和歌山の公共施設
 
-和歌山の公共施設をマッピング。
-https://github.com/wakayama-pref-org/list-of-public-facilities/blob/master/JSON/list-of-public-facilities.geojson
-
 - <a href="https://geolonia.github.io/amazon-location-service-add-custom-layer/map_ja_public_facilities_wakayama.html" target="_blank" rel="noopener noreferrer">https://geolonia.github.io/amazon-location-service-add-custom-layer/map_ja_public_facilities_wakayama.html</a>
 
 
