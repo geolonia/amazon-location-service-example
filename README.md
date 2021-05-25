@@ -1,30 +1,6 @@
-# SANDBOX Amazon Location Service
+# Amazon Location Service Add Custom Layer
 
-## Demo
+AmazonLocationService が提供している地図タイルに、Geolonia Embed API でカスタムデータレイヤーを追加したサンプルです。
 
-[https://geolonia.github.io/sandbox-amazon-location-service/](https://geolonia.github.io/sandbox-amazon-location-service/)
-
-## Dependencies
-
-- Amazon Location Serice
-    - A map named `explore.map`
-- Amazon Cognito Identity Pool
-    - A pool with the role described below:
-    ```json
-    {
-    "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Sid": "MapsReadOnly",
-                "Effect": "Allow",
-                "Action": [
-                    "geo:GetMapStyleDescriptor",
-                    "geo:GetMapGlyphs",
-                    "geo:GetMapSprites",
-                    "geo:GetMapTile"
-                ],
-                "Resource": "arn:aws:geo:ap-northeast-1:{AWS Account ID}:map/explore.map"
-            }
-        ]
-    }
-    ```
+## 参考
+詳細は [sandbox-amazon-location-service を見てください。](https://github.com/geolonia/sandbox-amazon-location-service)
