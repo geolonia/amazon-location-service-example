@@ -21,9 +21,9 @@
     <body>
       <div
         id="map" 
-        data-lat="33.9151"
-        data-lng="135.5317"
-        data-zoom="9"      
+        data-lat="35.65174"
+        data-lng="139.74336"
+        data-zoom="13"      
         data-marker="off"
         data-hash="on" 
         class="left"
@@ -103,7 +103,7 @@
               const hoursEnd = feature.properties["標準時間終了時間"]
               const age = feature.properties["入園可能月齢"]
 
-              const table = `<table><tr><td class="section_title">名称</td><td>${name}</td></tr><tr><td class="section_title">利用時間</td><td>${hoursStart}~${hoursEnd}</td></tr><tr><td class="section_title">入園可能月齢</td><td>${age}</td></tr></table>`
+              const table = `<table><tr><td class="section_title">名称</td><td>${name}</td></tr><tr><td class="section_title">標準時利用時間</td><td>${hoursStart}~${hoursEnd}</td></tr><tr><td class="section_title">入園可能月齢</td><td>${age}</td></tr></table>`
 
               popup
                 .setHTML(table)
