@@ -20,7 +20,7 @@ AmazonLocationService が提供している地図タイルに、Geolonia Embed A
 
 - <a href="https://geolonia.github.io/amazon-location-service-add-custom-layer/map_ja_hoikuen_tokyo_minatoku.html" target="_blank" rel="noopener noreferrer">https://geolonia.github.io/amazon-location-service-add-custom-layer/map_ja_hoikuen_tokyo_minatoku.html</a>
 
-- ソース: <a href="https://opendata.city.minato.tokyo.jp/dataset/a71499e9-5637-44c5-a473-da0e88f5506d/resource/187bb4fa-a1ba-4dab-bdd1-c18acdc13565/download/hoikuen.json" target="_blank" rel="noopener noreferrer">https://opendata.city.minato.tokyo.jp/dataset/a71499e9-5637-44c5-a473-da0e88f5506d/resource/187bb4fa-a1ba-4dab-bdd1-c18acdc13565/download/hoikuen.json</a>
+- <a href="https://opendata.city.minato.tokyo.jp/dataset/a71499e9-5637-44c5-a473-da0e88f5506d/resource/187bb4fa-a1ba-4dab-bdd1-c18acdc13565/download/hoikuen.json" target="_blank" rel="noopener noreferrer">港区オープンデータカタログサイト | 港区内認可保育園等一覧</a> を使用。
 
 
 ### 標高タイル + 衛星画像
