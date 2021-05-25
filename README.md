@@ -12,7 +12,7 @@ AmazonLocationService が提供している地図タイルに、Geolonia Embed A
 
 ### 日本語化
 
-- https://geolonia.github.io/amazon-location-service-add-custom-layer/map-ja.html
+- https://geolonia.github.io/amazon-location-service-add-custom-layer/map_ja.html
 
 
 ## 参考
