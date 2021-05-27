@@ -14,6 +14,10 @@
         "https://maps.geo.ap-northeast-1.amazonaws.com/maps/v0/maps/explore.map/tiles/{z}/{x}/{y}"
       ]
     },
+    "gsi-japan": {
+      "type": "vector",
+      "url": "https://cdn.geolonia.com/tiles/gsi.json"
+    },
     "geolonia": {
       "type": "vector",
       "minzoom": 8,
@@ -1078,7 +1082,7 @@
       "type": "line",
       "source": "omv",
       "source-layer": "roads",
-      "minzoom": 12,
+      "minzoom": 13,
       "filter": [
         "all",
         [
@@ -1840,7 +1844,7 @@
       "type": "symbol",
       "source": "geolonia",
       "source-layer": "poi",
-      "minzoom": 14,
+      "minzoom": 12,
       "filter": [
         "all",
         [
@@ -1898,6 +1902,51 @@
         "text-color": "rgba(0, 0, 0, 1)",
         "text-halo-width": 1.5,
         "text-halo-color": "rgba(255, 255, 255, 0.5)"
+      }
+    },
+    {
+      "id": "road-name-label",
+      "type": "symbol",
+      "source": "gsi-japan",
+      "source-layer": "transp",
+      "minzoom": 6,
+      "filter": [
+        "all",
+        [
+          "in",
+          "ftCode",
+          2901,
+          2903,
+          2904
+        ]
+      ],
+      "layout": {
+        "icon-image": "default_3",
+        "text-field": [
+          "case",
+          [
+            "has",
+            "uRNo"
+          ],
+          [
+            "get",
+            "uRNo"
+          ],
+          [
+            "has",
+            "nRNo"
+          ],
+          [
+            "get",
+            "nRNo"
+          ],
+          ""
+        ],
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": 10,
+        "icon-size": 1
       }
     },
     {
