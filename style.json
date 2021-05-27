@@ -1953,7 +1953,7 @@
       "type": "symbol",
       "source": "omv",
       "source-layer": "roads",
-      "minzoom": 14,
+      "minzoom": 19,
       "filter": [
         "all",
         [
@@ -2000,11 +2000,7 @@
         "text-size": {
           "stops": [
             [
-              14,
-              4
-            ],
-            [
-              16,
+              19,
               16
             ]
           ]
@@ -2022,7 +2018,7 @@
       "type": "symbol",
       "source": "omv",
       "source-layer": "roads",
-      "minzoom": 15,
+      "minzoom": 19,
       "filter": [
         "all",
         [
@@ -2052,11 +2048,7 @@
         "text-size": {
           "stops": [
             [
-              14,
-              12
-            ],
-            [
-              16,
+              19,
               16
             ]
           ]
