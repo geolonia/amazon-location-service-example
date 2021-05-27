@@ -645,6 +645,7 @@
       },
       "paint": {
         "line-color": "rgba(58, 76, 105, 1)",
+        "line-opacity": 0.5,
         "line-width": {
           "stops": [
             [
@@ -694,6 +695,7 @@
       },
       "paint": {
         "line-color": "rgba(177, 181, 182, 1)",
+        "line-opacity": 0.5,
         "line-width": {
           "stops": [
             [
@@ -742,6 +744,7 @@
       },
       "paint": {
         "line-color": "rgba(58, 76, 105, 1)",
+        "line-opacity": 0.5,
         "line-width": [
           "interpolate",
           [
@@ -1110,6 +1113,7 @@
       },
       "paint": {
         "line-color": "rgba(209, 208, 191, 1)",
+        "line-opacity": 0.5,
         "line-width": [
           "interpolate",
           [
