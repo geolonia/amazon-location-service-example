@@ -2,7 +2,7 @@
   "version": 8,
   "name": "Geolonia + VectorHereBerlin",
   "metadata": {},
-  "sprite": "https://sprites.geolonia.com/basic-white",
+  "sprite": "https://geolonia.github.io/amazon-location-service-add-custom-layer/icons/basic",
   "glyphs": "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
   "sources": {
     "omv": {
