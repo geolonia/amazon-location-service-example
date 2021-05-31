@@ -12,12 +12,7 @@
 
   <div
     id="map"
-    data-lat="35.6294"
-    data-lng="139.87429"
-    data-zoom="14.3"
-    data-marker="off"
     data-style="./style.json"
-    data-pitch="25"
     data-hash="on"
   ></div>
 
@@ -41,11 +36,17 @@
         AColorPicker.from( '#color-picker' ).on( 'change', ( picker, color ) => {
           const rgb = AColorPicker.parseColor( color, "rgb" );
           const waterColor = rgb.map( value => value * 0.7 )
+          const buildingColor = rgb.map( value => value * 1.2 )
           map.setPaintProperty( 'background', 'background-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
           map.setPaintProperty( 'Land', 'fill-color', AColorPicker.parseColor( color, "rgbcss" ) );
-          map.setPaintProperty( 'Openspace or forest', 'fill-color', '#00ff00' );
-          // map.setPaintProperty( 'waterway_tunnel', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
-          // map.setPaintProperty( 'waterway', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Urban area', 'fill-color', AColorPicker.parseColor( color, "rgbcss" ) );
+          map.setPaintProperty( 'Building', 'fill-color', AColorPicker.parseColor( buildingColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area medium scale/Lake or river', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area large scale/Lake or river', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area/Lake, river or bay', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water line medium scale', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water line large scale', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water line/Waterfall', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
         } )
 
       })

@@ -42,397 +42,10 @@
       "maxzoom": 15,
       "minzoom": 5,
       "paint": {
-        "fill-color": {
-          "stops": [
-            [
-              5,
-              "#2F3030"
-            ],
-            [
-              10,
-              "#323333"
-            ]
-          ]
-        }
+        "fill-color": "#323333"
       },
       "source": "esri",
       "source-layer": "Urban area",
-      "type": "fill"
-    },
-    {
-      "id": "Openspace or forest",
-      "layout": {},
-      "minzoom": 12,
-      "paint": {
-        "fill-color": {
-          "stops": [
-            [
-              7,
-              "#373837"
-            ],
-            [
-              9,
-              "#373938"
-            ]
-          ]
-        },
-        "fill-outline-color": "#373938"
-      },
-      "source": "esri",
-      "source-layer": "Openspace or forest",
-      "type": "fill"
-    },
-    {
-      "id": "Admin0 forest or park",
-      "layout": {},
-      "minzoom": 7,
-      "paint": {
-        "fill-color": {
-          "stops": [
-            [
-              7,
-              "#373837"
-            ],
-            [
-              9,
-              "#373938"
-            ]
-          ]
-        },
-        "fill-outline-color": "#373938"
-      },
-      "source": "esri",
-      "source-layer": "Admin0 forest or park",
-      "type": "fill"
-    },
-    {
-      "id": "Admin1 forest or park",
-      "layout": {},
-      "minzoom": 8,
-      "paint": {
-        "fill-color": {
-          "stops": [
-            [
-              7,
-              "#373837"
-            ],
-            [
-              9,
-              "#373938"
-            ]
-          ]
-        },
-        "fill-outline-color": "#373938"
-      },
-      "source": "esri",
-      "source-layer": "Admin1 forest or park",
-      "type": "fill"
-    },
-    {
-      "id": "Zoo",
-      "layout": {},
-      "minzoom": 12,
-      "paint": {
-        "fill-color": "#373938"
-      },
-      "source": "esri",
-      "source-layer": "Zoo",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        1
-      ],
-      "id": "Airport/Airport property",
-      "layout": {},
-      "minzoom": 9,
-      "paint": {
-        "fill-color": "#373838"
-      },
-      "source": "esri",
-      "source-layer": "Airport",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        0
-      ],
-      "id": "Airport/Airport runway",
-      "layout": {},
-      "minzoom": 11,
-      "paint": {
-        "fill-color": "#2d2e2e"
-      },
-      "source": "esri",
-      "source-layer": "Airport",
-      "type": "fill"
-    },
-    {
-      "id": "Pedestrian",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-color": "#353636"
-      },
-      "source": "esri",
-      "source-layer": "Pedestrian",
-      "type": "fill"
-    },
-    {
-      "id": "Park or farming",
-      "layout": {},
-      "minzoom": 12,
-      "paint": {
-        "fill-color": "#373938"
-      },
-      "source": "esri",
-      "source-layer": "Park or farming",
-      "type": "fill"
-    },
-    {
-      "id": "Beach",
-      "layout": {},
-      "minzoom": 13,
-      "paint": {
-        "fill-pattern": "Special area of interest/Sand"
-      },
-      "source": "esri",
-      "source-layer": "Beach",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        12
-      ],
-      "id": "Special area of interest/Garden path",
-      "layout": {
-        "visibility": "none"
-      },
-      "minzoom": 14,
-      "paint": {
-        "fill-color": "#353636",
-        "fill-outline-color": "#EBE8E8"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        15
-      ],
-      "id": "Special area of interest/Parking",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-color": "#353636"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        11
-      ],
-      "id": "Special area of interest/Green openspace",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-color": "#343635"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        8
-      ],
-      "id": "Special area of interest/Grass",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-color": "#3c3e3d"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        1
-      ],
-      "id": "Special area of interest/Baseball field or other grounds",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-color": "#3a3b3a"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        13
-      ],
-      "id": "Special area of interest/Groundcover",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-opacity": 0.5,
-        "fill-pattern": "Special area of interest/Groundcover"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        5
-      ],
-      "id": "Special area of interest/Field or court exterior",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-color": "#404140"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        4
-      ],
-      "id": "Special area of interest/Football field or court",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-color": "#3a3b3a",
-        "fill-outline-color": "#353636"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        10
-      ],
-      "id": "Special area of interest/Hardcourt",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-color": "#2a2c2b",
-        "fill-outline-color": "#353636"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        14
-      ],
-      "id": "Special area of interest/Mulch or dirt",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-color": "#4c4d49"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        0
-      ],
-      "id": "Special area of interest/Athletic track",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-color": "#3b3b3b",
-        "fill-outline-color": "#333232"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        6
-      ],
-      "id": "Special area of interest/Sand",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-pattern": "Special area of interest/Sand"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        16
-      ],
-      "id": "Special area of interest/Rock or gravel",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-pattern": "Special area of interest/Rock or gravel"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        7
-      ],
-      "id": "Special area of interest/Water",
-      "layout": {},
-      "minzoom": 15,
-      "paint": {
-        "fill-color": "#1d2224"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
       "type": "fill"
     },
     {
@@ -518,11 +131,6 @@
       "type": "line"
     },
     {
-      "filter": [
-        "==",
-        "_symbol",
-        5
-      ],
       "id": "Water line/Waterfall",
       "layout": {
         "line-join": "round"
@@ -539,246 +147,6 @@
       "source": "esri",
       "source-layer": "Water line",
       "type": "line"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        2
-      ],
-      "id": "Water line/Dam or weir",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "minzoom": 11,
-      "paint": {
-        "line-color": "#262525",
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [
-              11,
-              0.7
-            ],
-            [
-              14,
-              0.7
-            ],
-            [
-              17,
-              2
-            ]
-          ]
-        }
-      },
-      "source": "esri",
-      "source-layer": "Water line",
-      "type": "line"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        3
-      ],
-      "id": "Water line/Levee/1",
-      "layout": {
-        "line-join": "round"
-      },
-      "minzoom": 11,
-      "paint": {
-        "line-color": "#222628",
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [
-              11,
-              0.7
-            ],
-            [
-              14,
-              0.7
-            ],
-            [
-              17,
-              2
-            ]
-          ]
-        }
-      },
-      "source": "esri",
-      "source-layer": "Water line",
-      "type": "line"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        3
-      ],
-      "id": "Water line/Levee/0",
-      "layout": {
-        "icon-allow-overlap": true,
-        "icon-image": "Water line/Levee/0",
-        "icon-padding": 1,
-        "icon-rotation-alignment": "map",
-        "symbol-avoid-edges": true,
-        "symbol-placement": "line",
-        "symbol-spacing": 15
-      },
-      "minzoom": 13,
-      "paint": {},
-      "source": "esri",
-      "source-layer": "Water line",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        1
-      ],
-      "id": "Water line/Canal or ditch",
-      "layout": {
-        "line-cap": "round"
-      },
-      "minzoom": 11,
-      "paint": {
-        "line-color": "#222628",
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [
-              11,
-              0.8
-            ],
-            [
-              14,
-              0.8
-            ],
-            [
-              17,
-              2
-            ]
-          ]
-        }
-      },
-      "source": "esri",
-      "source-layer": "Water line",
-      "type": "line"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        4
-      ],
-      "id": "Water line/Stream or river intermittent",
-      "layout": {},
-      "minzoom": 11,
-      "paint": {
-        "line-color": "#222628",
-        "line-dasharray": [
-          7,
-          3
-        ],
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [
-              11,
-              0.8
-            ],
-            [
-              14,
-              0.8
-            ],
-            [
-              17,
-              2
-            ]
-          ]
-        }
-      },
-      "source": "esri",
-      "source-layer": "Water line",
-      "type": "line"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        0
-      ],
-      "id": "Water line/Stream or river",
-      "layout": {
-        "line-cap": "round"
-      },
-      "minzoom": 11,
-      "paint": {
-        "line-color": "#222628",
-        "line-width": {
-          "base": 1.2,
-          "stops": [
-            [
-              11,
-              0.8
-            ],
-            [
-              14,
-              0.8
-            ],
-            [
-              17,
-              2
-            ]
-          ]
-        }
-      },
-      "source": "esri",
-      "source-layer": "Water line",
-      "type": "line"
-    },
-    {
-      "id": "Marine area",
-      "layout": {},
-      "minzoom": 4,
-      "paint": {
-        "fill-color": "#1d2224"
-      },
-      "source": "esri",
-      "source-layer": "Marine area",
-      "type": "fill"
-    },
-    {
-      "id": "Water area small scale",
-      "layout": {},
-      "maxzoom": 5,
-      "minzoom": 1,
-      "paint": {
-        "fill-color": "#1d2224"
-      },
-      "source": "esri",
-      "source-layer": "Water area small scale",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        1
-      ],
-      "id": "Water area medium scale/Lake intermittent",
-      "layout": {},
-      "maxzoom": 7,
-      "minzoom": 5,
-      "paint": {
-        "fill-pattern": "Water area/Lake or river intermittent"
-      },
-      "source": "esri",
-      "source-layer": "Water area medium scale",
-      "type": "fill"
     },
     {
       "filter": [
@@ -801,23 +169,6 @@
       "filter": [
         "==",
         "_symbol",
-        1
-      ],
-      "id": "Water area large scale/Lake intermittent",
-      "layout": {},
-      "maxzoom": 11,
-      "minzoom": 7,
-      "paint": {
-        "fill-pattern": "Water area/Lake or river intermittent"
-      },
-      "source": "esri",
-      "source-layer": "Water area large scale",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
         0
       ],
       "id": "Water area large scale/Lake or river",
@@ -832,11 +183,6 @@
       "type": "fill"
     },
     {
-      "filter": [
-        "==",
-        "_symbol",
-        7
-      ],
       "id": "Water area/Lake, river or bay",
       "layout": {},
       "minzoom": 11,
@@ -845,103 +191,6 @@
       },
       "source": "esri",
       "source-layer": "Water area",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        6
-      ],
-      "id": "Water area/Lake or river intermittent",
-      "layout": {},
-      "minzoom": 11,
-      "paint": {
-        "fill-pattern": "Water area/Lake or river intermittent"
-      },
-      "source": "esri",
-      "source-layer": "Water area",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        4
-      ],
-      "id": "Water area/Inundated area",
-      "layout": {},
-      "minzoom": 11,
-      "paint": {
-        "fill-pattern": "Water area/Inundated area"
-      },
-      "source": "esri",
-      "source-layer": "Water area",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        3
-      ],
-      "id": "Water area/Swamp or marsh",
-      "layout": {},
-      "minzoom": 11,
-      "paint": {
-        "fill-pattern": "Water area/Swamp or marsh"
-      },
-      "source": "esri",
-      "source-layer": "Water area",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        1
-      ],
-      "id": "Water area/Playa",
-      "layout": {},
-      "minzoom": 11,
-      "paint": {
-        "fill-pattern": "Water area/Playa"
-      },
-      "source": "esri",
-      "source-layer": "Water area",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        5
-      ],
-      "id": "Water area/Dam or weir",
-      "layout": {},
-      "minzoom": 11,
-      "paint": {
-        "fill-color": "#383939",
-        "fill-outline-color": "#2e2f2f"
-      },
-      "source": "esri",
-      "source-layer": "Water area",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        2
-      ],
-      "id": "Special area of interest/Bike, walk or pedestrian",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-color": "#353636"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
       "type": "fill"
     },
     {
@@ -1209,7 +458,7 @@
       },
       "minzoom": 15,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1784,7 +1033,7 @@
       },
       "minzoom": 15,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-dasharray": [
           3,
           1.5
@@ -1832,7 +1081,7 @@
       },
       "minzoom": 15,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-dasharray": [
           3,
           1.5
@@ -1879,7 +1128,7 @@
       },
       "minzoom": 13,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -1923,7 +1172,7 @@
       },
       "minzoom": 13,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -2026,7 +1275,7 @@
       },
       "minzoom": 11,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -2074,7 +1323,7 @@
       },
       "minzoom": 11,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -2122,7 +1371,7 @@
       },
       "minzoom": 9,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -2170,7 +1419,7 @@
       },
       "minzoom": 9,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -2218,7 +1467,7 @@
       },
       "minzoom": 7,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -2265,7 +1514,7 @@
       },
       "minzoom": 8,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-width": {
           "base": 1.2,
           "stops": [
@@ -2890,7 +2139,7 @@
       },
       "minzoom": 15,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-dasharray": [
           3,
           1.5
@@ -2938,7 +2187,7 @@
       },
       "minzoom": 13,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-opacity": 0.5,
         "line-width": {
           "base": 1.2,
@@ -2982,7 +2231,7 @@
       },
       "minzoom": 13,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-opacity": 0.5,
         "line-width": {
           "base": 1.2,
@@ -3085,7 +2334,7 @@
       },
       "minzoom": 11,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-opacity": 0.5,
         "line-width": {
           "base": 1.2,
@@ -3133,7 +2382,7 @@
       },
       "minzoom": 11,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-opacity": 0.5,
         "line-width": {
           "base": 1.2,
@@ -3181,7 +2430,7 @@
       },
       "minzoom": 9,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-opacity": 0.5,
         "line-width": {
           "base": 1.2,
@@ -3229,7 +2478,7 @@
       },
       "minzoom": 9,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-opacity": 0.5,
         "line-width": {
           "base": 1.2,
@@ -3277,7 +2526,7 @@
       },
       "minzoom": 7,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-opacity": 0.5,
         "line-width": {
           "base": 1.2,
@@ -3325,7 +2574,7 @@
       },
       "minzoom": 8,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-opacity": 0.5,
         "line-width": {
           "base": 1.2,
@@ -3556,7 +2805,7 @@
       },
       "minzoom": 4,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-width": {
           "base": 1,
           "stops": [
@@ -3604,7 +2853,7 @@
       },
       "minzoom": 1,
       "paint": {
-        "line-color": "#434444",
+        "line-color": "rgba(255, 255, 255, 0.4)",
         "line-width": {
           "base": 1,
           "stops": [
