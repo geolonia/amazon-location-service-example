@@ -634,17 +634,6 @@
       "type": "fill"
     },
     {
-      "id": "Beach",
-      "layout": {},
-      "minzoom": 13,
-      "paint": {
-        "fill-pattern": "Special area of interest/Sand"
-      },
-      "source": "esri",
-      "source-layer": "Beach",
-      "type": "fill"
-    },
-    {
       "filter": [
         "==",
         "_symbol",
@@ -723,23 +712,6 @@
       "minzoom": 14,
       "paint": {
         "fill-color": "#C4D4B5"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        13
-      ],
-      "id": "Special area of interest/Groundcover",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-opacity": 0.5,
-        "fill-pattern": "Special area of interest/Groundcover"
       },
       "source": "esri",
       "source-layer": "Special area of interest",
@@ -840,38 +812,6 @@
       "paint": {
         "fill-color": "#E0B8B8",
         "fill-outline-color": "#EEE6D6"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        6
-      ],
-      "id": "Special area of interest/Sand",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-pattern": "Special area of interest/Sand"
-      },
-      "source": "esri",
-      "source-layer": "Special area of interest",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        16
-      ],
-      "id": "Special area of interest/Rock or gravel",
-      "layout": {},
-      "minzoom": 14,
-      "paint": {
-        "fill-pattern": "Special area of interest/Rock or gravel"
       },
       "source": "esri",
       "source-layer": "Special area of interest",
@@ -1383,23 +1323,6 @@
       "filter": [
         "==",
         "_symbol",
-        1
-      ],
-      "id": "Water area medium scale/Lake intermittent",
-      "layout": {},
-      "maxzoom": 7,
-      "minzoom": 5,
-      "paint": {
-        "fill-pattern": "Water area/Lake or river intermittent"
-      },
-      "source": "esri",
-      "source-layer": "Water area medium scale",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
         0
       ],
       "id": "Water area medium scale/Lake or river",
@@ -1423,23 +1346,6 @@
       },
       "source": "esri",
       "source-layer": "Water area medium scale",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        1
-      ],
-      "id": "Water area large scale/Lake intermittent",
-      "layout": {},
-      "maxzoom": 11,
-      "minzoom": 7,
-      "paint": {
-        "fill-pattern": "Water area/Lake or river intermittent"
-      },
-      "source": "esri",
-      "source-layer": "Water area large scale",
       "type": "fill"
     },
     {
@@ -1494,87 +1400,6 @@
       "paint": {
         "fill-color": "#b8e6ff",
         "fill-outline-color": "#b8e6ff"
-      },
-      "source": "esri",
-      "source-layer": "Water area",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        6
-      ],
-      "id": "Water area/Lake or river intermittent",
-      "layout": {},
-      "minzoom": 11,
-      "paint": {
-        "fill-pattern": "Water area/Lake or river intermittent"
-      },
-      "source": "esri",
-      "source-layer": "Water area",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        4
-      ],
-      "id": "Water area/Inundated area",
-      "layout": {},
-      "minzoom": 11,
-      "paint": {
-        "fill-pattern": "Water area/Inundated area"
-      },
-      "source": "esri",
-      "source-layer": "Water area",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        3
-      ],
-      "id": "Water area/Swamp or marsh",
-      "layout": {},
-      "minzoom": 11,
-      "paint": {
-        "fill-pattern": "Water area/Swamp or marsh"
-      },
-      "source": "esri",
-      "source-layer": "Water area",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        1
-      ],
-      "id": "Water area/Playa",
-      "layout": {},
-      "minzoom": 11,
-      "paint": {
-        "fill-pattern": "Water area/Playa"
-      },
-      "source": "esri",
-      "source-layer": "Water area",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        2
-      ],
-      "id": "Water area/Ice mass",
-      "layout": {},
-      "minzoom": 11,
-      "paint": {
-        "fill-opacity": 0.5,
-        "fill-pattern": "Water area/Ice mass"
       },
       "source": "esri",
       "source-layer": "Water area",
@@ -13936,8 +13761,6 @@
       ],
       "id": "City small scale/town small non capital",
       "layout": {
-        "icon-image": "City small scale/town small non capital",
-        "icon-padding": 1,
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
@@ -13974,8 +13797,6 @@
       ],
       "id": "City small scale/town large non capital",
       "layout": {
-        "icon-image": "City small scale/town large non capital",
-        "icon-padding": 1,
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
@@ -14012,8 +13833,6 @@
       ],
       "id": "City small scale/small non capital",
       "layout": {
-        "icon-image": "City small scale/small non capital",
-        "icon-padding": 1,
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
@@ -14050,8 +13869,6 @@
       ],
       "id": "City small scale/medium non capital",
       "layout": {
-        "icon-image": "City small scale/medium non capital",
-        "icon-padding": 1,
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
@@ -14217,8 +14034,6 @@
       ],
       "id": "City small scale/medium other capital",
       "layout": {
-        "icon-image": "City small scale/medium other capital",
-        "icon-padding": 1,
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
@@ -14765,8 +14580,6 @@
       ],
       "id": "City small scale/large other capital",
       "layout": {
-        "icon-image": "City small scale/large other capital",
-        "icon-padding": 1,
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
@@ -14893,8 +14706,6 @@
       ],
       "id": "City small scale/large non capital",
       "layout": {
-        "icon-image": "City small scale/large non capital",
-        "icon-padding": 1,
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
@@ -15021,8 +14832,6 @@
       ],
       "id": "City small scale/x large non capital",
       "layout": {
-        "icon-image": "City small scale/x large non capital",
-        "icon-padding": 1,
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
@@ -15085,8 +14894,6 @@
       ],
       "id": "City small scale/x large admin1 capital",
       "layout": {
-        "icon-image": "City small scale/x large admin1 capital",
-        "icon-padding": 1,
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
@@ -15149,8 +14956,6 @@
       ],
       "id": "City small scale/x large admin0 capital",
       "layout": {
-        "icon-image": "City small scale/x large admin0 capital",
-        "icon-padding": 1,
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
