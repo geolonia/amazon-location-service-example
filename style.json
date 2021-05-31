@@ -6101,7 +6101,8 @@
       "id": "Spot elevation",
       "layout": {
         "icon-allow-overlap": true,
-        "icon-image": "Spotheight",
+        "icon-image": "triangle-11",
+        "icon-size": 0.6,
         "icon-padding": 1,
         "symbol-avoid-edges": true,
         "text-allow-overlap": false,
