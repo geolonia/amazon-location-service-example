@@ -9,6 +9,7 @@
 </head>
 <body>
   <!-- map container -->
+
   <div
     id="map"
     data-lat="35.6294"
@@ -19,15 +20,36 @@
     data-pitch="25"
     data-hash="on"
   ></div>
+
+  <div id="color-picker" acp-color="#131C36" acp-show-hsl="no" acp-show-hex="no" acp-show-rgb="no"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/a-color-picker@1.2.1/dist/acolorpicker.min.js"></script>
+
   <!-- JavaScript dependencies -->
   <script src="https://cdn.geolonia.com/v1/embed?geolonia-api-key=YOUR-API-KEY"></script>
+
   <script>
     var provider = new window.geolonia.AmazonLocationServiceMapProvider({
       cognitoIdentityPoolId: "ap-northeast-1:d995db2c-8646-4ed2-8122-45dbd2c80019",
       mapName: 'explore.map'
     })
 
-    provider.initMap({ container: "#map" })
+    provider
+      .initMap({ container: "#map" })
+      .then((map) => {
+
+        AColorPicker.from( '#color-picker' ).on( 'change', ( picker, color ) => {
+          const rgb = AColorPicker.parseColor( color, "rgb" );
+          const waterColor = rgb.map( value => value * 0.7 )
+          map.setPaintProperty( 'background', 'background-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Land', 'fill-color', AColorPicker.parseColor( color, "rgbcss" ) );
+          map.setPaintProperty( 'Openspace or forest', 'fill-color', '#00ff00' );
+          // map.setPaintProperty( 'waterway_tunnel', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          // map.setPaintProperty( 'waterway', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+        } )
+
+      })
+
   </script>
 </body>
 </html>

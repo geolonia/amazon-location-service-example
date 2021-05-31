@@ -4,3 +4,11 @@ html, body, #map {
   margin: 0;
   padding: 0;
 }
+
+#color-picker
+{
+  position: absolute;
+  bottom: 56px;
+  left: 8px;
+  z-index: 9999;
+}
