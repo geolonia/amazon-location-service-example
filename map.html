@@ -18,10 +18,7 @@
     data-style="./style.json"
     data-pitch="25"
     data-hash="on"
-    class="left"
   ></div>
-  <!-- TODO: スタイル調整が終われば削除する-->
-  <pre id="json" class="right"></pre>
   <!-- JavaScript dependencies -->
   <script src="https://cdn.geolonia.com/v1/embed?geolonia-api-key=YOUR-API-KEY"></script>
   <script>
@@ -30,33 +27,7 @@
       mapName: 'explore.map'
     })
 
-    provider
-      .initMap({ container: "#map" })
-      .then(function(map) {
-        /* TODO: 以下はスタイル調整が終わった時削除する */
-        map.on('load', () => {
-          const dumpFeature = event => {
-            const features = map.queryRenderedFeatures(event.point)
-            const jsonContainer = document.getElementById('json')
-            jsonContainer.innerText = JSON.stringify(features, null, '  ')
-          }
-
-          const mouseEnter = () => {
-            map.getCanvas().style.cursor = 'pointer'
-          }
-
-          const mouseLeave = () => {
-            map.getCanvas().style.cursor = ''
-          }
-
-          map.getStyle().layers.forEach( (item) => {
-            map.on('click', item.id, dumpFeature)
-            map.on('mouseenter', item.id, mouseEnter)
-            map.on('mouseleave', item.id, mouseLeave)
-          })
-        })
-        /* TODO: ここまで削除する */
-      })
+    provider.initMap({ container: "#map" })
   </script>
 </body>
 </html>
