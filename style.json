@@ -9,9 +9,14 @@
         "https://maps.geo.ap-northeast-1.amazonaws.com/maps/v0/maps/explore.map/tiles/{z}/{x}/{y}"
       ],
       "type": "vector"
+    },
+    "geolonia": {
+      "type": "vector",
+      "minzoom": 8,
+      "url": "https://api.geolonia.com/v1/sources?key=YOUR-API-KEY"
     }
   },
-  "sprite": "https://maps.geo.ap-northeast-1.amazonaws.com/maps/v0/maps/explore.map/sprites/sprites",
+  "sprite": "https://sprites.geolonia.com/basic",
   "glyphs": "https://maps.geo.ap-northeast-1.amazonaws.com/maps/v0/maps/explore.map/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -8744,7 +8749,7 @@
       ],
       "id": "Road/label/U-shaped blue white (Alt)",
       "layout": {
-        "icon-image": "Road/U-shaped blue white (Alt)/{_len}",
+        "icon-image": "default_{_len}",
         "icon-rotation-alignment": "viewport",
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
@@ -8802,7 +8807,7 @@
       ],
       "id": "Road/label/U-shaped blue white",
       "layout": {
-        "icon-image": "Road/U-shaped blue white/{_len}",
+        "icon-image": "default_{_len}",
         "icon-rotation-alignment": "viewport",
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
@@ -10696,7 +10701,7 @@
       ],
       "id": "Road/label/Hexagon blue white",
       "layout": {
-        "icon-image": "Road/Hexagon blue white/{_len}",
+        "icon-image": "default_{_len}",
         "icon-rotation-alignment": "viewport",
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
@@ -10753,7 +10758,7 @@
       ],
       "id": "Road/label/Hexagon blue white (Alt)",
       "layout": {
-        "icon-image": "Road/Hexagon blue white (Alt)/{_len}",
+        "icon-image": "default_{_len}",
         "icon-rotation-alignment": "viewport",
         "symbol-avoid-edges": true,
         "symbol-placement": "line",
@@ -12830,48 +12835,6 @@
       "type": "symbol"
     },
     {
-      "filter": [
-        "==",
-        "_label_class",
-        1
-      ],
-      "id": "Point of interest/Park",
-      "layout": {
-        "symbol-avoid-edges": true,
-        "text-allow-overlap": false,
-        "text-anchor": "center",
-        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-letter-spacing": 0.08,
-        "text-max-width": 8,
-        "text-padding": 15,
-        "text-size": {
-          "stops": [
-            [
-              9,
-              8.5
-            ],
-            [
-              17,
-              9.5
-            ]
-          ]
-        }
-      },
-      "minzoom": 9,
-      "paint": {
-        "text-color": "#2E8008",
-        "text-halo-blur": 1,
-        "text-halo-color": "#FFFFFF",
-        "text-halo-width": 1.5
-      },
-      "source": "esri",
-      "source-layer": "Point of interest",
-      "type": "symbol"
-    },
-    {
       "id": "Education/label/Default",
       "layout": {
         "symbol-avoid-edges": true,
@@ -13524,23 +13487,52 @@
       "type": "symbol"
     },
     {
+      "id": "poi",
+      "type": "symbol",
+      "source": "geolonia",
+      "source-layer": "poi",
+      "minzoom": 16,
       "filter": [
-        "==",
-        "_label_class",
-        0
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          ">",
+          "rank",
+          25
+        ],
+        [
+          "has",
+          "name"
+        ]
       ],
-      "id": "Point of interest/General",
       "layout": {
-        "symbol-avoid-edges": true,
-        "text-allow-overlap": false,
-        "text-anchor": "center",
-        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
+        "text-padding": 2,
         "text-font": [
           "Noto Sans Regular"
         ],
-        "text-letter-spacing": 0.08,
-        "text-max-width": 8,
-        "text-padding": 15,
+        "icon-image": [
+          "coalesce",
+          [
+            "image",
+            [
+              "concat",
+              [
+                "get",
+                "class"
+              ],
+              "-11"
+            ]
+          ],
+          [
+            "image",
+            "circle-11"
+          ]
+        ],
+        "text-field": "{name}",
         "text-size": {
           "stops": [
             [
@@ -13552,229 +13544,99 @@
               9.5
             ]
           ]
-        }
-      },
-      "minzoom": 9,
-      "paint": {
-        "text-color": {
-          "stops": [
-            [
-              9,
-              "#241e07"
-            ],
-            [
-              11,
-              "#262317"
-            ]
-          ]
         },
-        "text-halo-blur": 1,
-        "text-halo-color": "#FFFFFF",
-        "text-halo-width": 1.5
+        "text-max-width": 9,
+        "text-variable-anchor": [
+          "top",
+          "bottom",
+          "left",
+          "right"
+        ],
+        "text-radial-offset": 0.7,
+        "text-justify": "center",
+        "text-anchor": "center"
       },
-      "source": "esri",
-      "source-layer": "Point of interest",
-      "type": "symbol"
+      "paint": {
+        "text-color": "rgba(0, 0, 0, 1)",
+        "text-halo-width": 1.5,
+        "text-halo-color": "rgba(255, 255, 255, 0.5)"
+      }
     },
     {
+      "id": "poi-primary",
+      "type": "symbol",
+      "source": "geolonia",
+      "source-layer": "poi",
+      "minzoom": 12,
       "filter": [
-        "==",
-        "_symbol",
-        2
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "<=",
+          "rank",
+          25
+        ],
+        [
+          "has",
+          "name"
+        ]
       ],
-      "id": "Point of interest/Bus station",
       "layout": {
-        "icon-allow-overlap": true,
-        "icon-image": "Point of interest/Bus station",
-        "icon-padding": 2,
-        "icon-size": {
-          "stops": [
-            [
-              9,
-              0.28
-            ],
-            [
-              16,
-              0.9
-            ]
-          ]
-        },
-        "symbol-avoid-edges": true,
-        "text-allow-overlap": false,
-        "text-anchor": "bottom",
-        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
+        "text-padding": 2,
         "text-font": [
           "Noto Sans Regular"
         ],
-        "text-letter-spacing": 0.04,
-        "text-max-width": 8,
-        "text-offset": [
-          0,
-          -0.9
-        ],
-        "text-optional": {
-          "stops": [
+        "icon-image": [
+          "coalesce",
+          [
+            "image",
             [
-              9,
-              false
-            ],
-            [
-              14,
-              true
+              "concat",
+              [
+                "get",
+                "class"
+              ],
+              "-11"
             ]
+          ],
+          [
+            "image",
+            "circle-11"
           ]
-        },
-        "text-padding": 5,
+        ],
+        "text-field": "{name}",
         "text-size": {
           "stops": [
             [
-              12.9,
-              0
-            ],
-            [
-              13,
-              7.5
-            ],
-            [
-              17,
-              9
-            ]
-          ]
-        }
-      },
-      "minzoom": 11,
-      "paint": {
-        "icon-opacity": {
-          "stops": [
-            [
-              11,
-              0.65
+              9,
+              8.5
             ],
             [
               15,
-              1
+              9.5
             ]
           ]
         },
-        "text-color": {
-          "stops": [
-            [
-              9,
-              "#241e07"
-            ],
-            [
-              11,
-              "#413c27"
-            ]
-          ]
-        },
-        "text-halo-blur": 1,
-        "text-halo-color": "#FFFFFF",
-        "text-halo-width": 1.5
-      },
-      "source": "esri",
-      "source-layer": "Point of interest",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "==",
-        "_symbol",
-        3
-      ],
-      "id": "Point of interest/Rail station",
-      "layout": {
-        "icon-allow-overlap": true,
-        "icon-image": "Point of interest/Rail station",
-        "icon-padding": 2,
-        "icon-size": {
-          "stops": [
-            [
-              9,
-              0.28
-            ],
-            [
-              16,
-              0.9
-            ]
-          ]
-        },
-        "symbol-avoid-edges": true,
-        "text-allow-overlap": false,
-        "text-anchor": "bottom",
-        "text-field": ["string", ["get", "_name_ja"], ["string", ["get", "_name_local"], ["string", ["get", "_name_global"], ["get", "_name"]]]],
-        "text-font": [
-          "Noto Sans Regular"
+        "text-max-width": 9,
+        "text-variable-anchor": [
+          "top",
+          "bottom",
+          "left",
+          "right"
         ],
-        "text-letter-spacing": 0.04,
-        "text-max-width": 8,
-        "text-offset": [
-          0,
-          -0.9
-        ],
-        "text-optional": {
-          "stops": [
-            [
-              9,
-              false
-            ],
-            [
-              14,
-              true
-            ]
-          ]
-        },
-        "text-padding": 5,
-        "text-size": {
-          "stops": [
-            [
-              12.9,
-              0
-            ],
-            [
-              13,
-              7.5
-            ],
-            [
-              17,
-              9
-            ]
-          ]
-        }
+        "text-radial-offset": 0.7,
+        "text-justify": "center",
+        "text-anchor": "center"
       },
-      "minzoom": 11,
       "paint": {
-        "icon-opacity": {
-          "stops": [
-            [
-              11,
-              0.65
-            ],
-            [
-              15,
-              1
-            ]
-          ]
-        },
-        "text-color": {
-          "stops": [
-            [
-              9,
-              "#081340"
-            ],
-            [
-              11,
-              "#2c345a"
-            ]
-          ]
-        },
-        "text-halo-blur": 1,
-        "text-halo-color": "#FFFFFF",
-        "text-halo-width": 1.5
-      },
-      "source": "esri",
-      "source-layer": "Point of interest",
-      "type": "symbol"
+        "text-color": "rgba(0, 0, 0, 1)",
+        "text-halo-width": 1.5,
+        "text-halo-color": "rgba(255, 255, 255, 0.5)"
+      }
     },
     {
       "id": "Neighborhood",
