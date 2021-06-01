@@ -36,7 +36,7 @@
         AColorPicker.from( '#color-picker' ).on( 'change', ( picker, color ) => {
           const rgb = AColorPicker.parseColor( color, "rgb" );
           const waterColor = rgb.map( value => value * 0.7 )
-          const buildingColor = rgb.map( value => value * 1.2 )
+          // const buildingColor = rgb.map( value => value * 1.2 )
           // map.setPaintProperty( 'background', 'background-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
           // map.setPaintProperty( 'Land', 'fill-color', AColorPicker.parseColor( color, "rgbcss" ) );
           // map.setPaintProperty( 'Urban area', 'fill-color', AColorPicker.parseColor( color, "rgbcss" ) );
@@ -65,7 +65,6 @@
           map.setPaintProperty( 'Bathymetry/depth 6', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
           map.setPaintProperty( 'Bathymetry/depth 7 (deep water)', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
           map.setPaintProperty( 'Coastline', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
-
         } )
 
       })
