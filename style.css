@@ -12,3 +12,8 @@ html, body, #map {
   left: 8px;
   z-index: 9999;
 }
+
+.mapboxgl-ctrl-bottom-left
+{
+  display: none;
+}
