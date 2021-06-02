@@ -33,21 +33,39 @@
       .initMap({ container: "#map" })
       .then((map) => {
 
-        // AColorPicker.from( '#color-picker' ).on( 'change', ( picker, color ) => {
-        //   const rgb = AColorPicker.parseColor( color, "rgb" );
-        //   const waterColor = rgb.map( value => value * 0.7 )
-        //   const buildingColor = rgb.map( value => value * 1.2 )
-        //   map.setPaintProperty( 'background', 'background-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
-        //   map.setPaintProperty( 'Land', 'fill-color', AColorPicker.parseColor( color, "rgbcss" ) );
-        //   map.setPaintProperty( 'Urban area', 'fill-color', AColorPicker.parseColor( color, "rgbcss" ) );
-        //   map.setPaintProperty( 'Building', 'fill-color', AColorPicker.parseColor( buildingColor, "rgbcss" ) );
-        //   map.setPaintProperty( 'Water area medium scale/Lake or river', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
-        //   map.setPaintProperty( 'Water area large scale/Lake or river', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
-        //   map.setPaintProperty( 'Water area/Lake, river or bay', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
-        //   map.setPaintProperty( 'Water line medium scale', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
-        //   map.setPaintProperty( 'Water line large scale', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
-        //   map.setPaintProperty( 'Water line/Waterfall', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
-        // } )
+        AColorPicker.from( '#color-picker' ).on( 'change', ( picker, color ) => {
+          const rgb = AColorPicker.parseColor( color, "rgb" );
+          const waterColor = rgb.map( value => value * 0.7 )
+          // const buildingColor = rgb.map( value => value * 1.2 )
+          // map.setPaintProperty( 'background', 'background-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          // map.setPaintProperty( 'Land', 'fill-color', AColorPicker.parseColor( color, "rgbcss" ) );
+          // map.setPaintProperty( 'Urban area', 'fill-color', AColorPicker.parseColor( color, "rgbcss" ) );
+          // map.setPaintProperty( 'Building', 'fill-color', AColorPicker.parseColor( buildingColor, "rgbcss" ) );
+
+          map.setPaintProperty( 'Water area small scale', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area small scale', 'fill-outline-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area medium scale/Lake or river', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area medium scale/Lake or river', 'fill-outline-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area large scale/Lake or river', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area large scale/Lake or river', 'fill-outline-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area/Lake, river or bay', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area/Lake, river or bay', 'fill-outline-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water line small scale', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water line medium scale', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water line large scale', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water line/Waterfall', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water line/Stream or river', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+
+          // Sea Layer
+          map.setPaintProperty( 'Marine area/1', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Bathymetry/depth 2 (shallow water)', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Bathymetry/depth 3', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Bathymetry/depth 4', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Bathymetry/depth 5', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Bathymetry/depth 6', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Bathymetry/depth 7 (deep water)', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Coastline', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+        } )
 
       })
 
