@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geolonia with Amazon Location Service</title>
+</head>
+<body>
+  <!-- map container -->
+  <div
+    id="map"
+    data-style="./style.json"
+    data-lng="139.7673068"
+    data-lat="35.6809591"
+    data-zoom="14"
+    data-hash="on"
+    data-marker="off"
+  ></div>
+
+  <div id="color-picker" acp-color="#131C36" acp-show-hsl="no" acp-show-hex="no" acp-show-rgb="no"></div>
+
+  <!-- JavaScript dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/a-color-picker@1.2.1/dist/acolorpicker.min.js"></script>
+  <script src="https://cdn.geolonia.com/v1/embed?geolonia-api-key=YOUR-API-KEY"></script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.775.0.min.js"></script>
+  <script src="https://unpkg.com/@aws-amplify/core@3.7.0/dist/aws-amplify-core.min.js"></script>
+
+  <script>
+    var provider = new window.geolonia.AmazonLocationServiceMapProvider({
+      cognitoIdentityPoolId: "ap-northeast-1:d995db2c-8646-4ed2-8122-45dbd2c80019",
+      mapName: 'explore.map'
+    })
+
+    provider
+      .initMap({ container: "#map" })
+      .then((map) => {
+
+        AColorPicker.from( '#color-picker' ).on( 'change', ( picker, color ) => {
+          const rgb = AColorPicker.parseColor( color, "rgb" );
+          const waterColor = rgb.map( value => value * 0.7 )
+          const buildingColor = rgb.map( value => value * 1.2 )
+
+          map.setPaintProperty( 'Land/Not ice', 'fill-color', AColorPicker.parseColor( color, "rgbcss" ) );
+          map.setPaintProperty( 'Urban area', 'fill-color', AColorPicker.parseColor( color, "rgbcss" ) );
+          map.setPaintProperty( 'Vegetation small scale/High density', 'fill-color', AColorPicker.parseColor( color, "rgbcss" ) );
+          map.setPaintProperty( 'Vegetation small scale/Low density', 'fill-color', AColorPicker.parseColor( color, "rgbcss" ) );
+
+          map.setPaintProperty( 'Building/1', 'fill-color', AColorPicker.parseColor( buildingColor, "rgbcss" ) );
+          map.setPaintProperty( 'Building/2', 'fill-color', AColorPicker.parseColor( buildingColor, "rgbcss" ) );
+          map.setPaintProperty( 'Building/General', 'fill-color', AColorPicker.parseColor( buildingColor, "rgbcss" ) );
+
+          map.setPaintProperty( 'Water area small scale', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area small scale', 'fill-outline-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area medium scale/Lake or river', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area medium scale/Lake or river', 'fill-outline-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area large scale/Lake or river', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area large scale/Lake or river', 'fill-outline-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area/Lake, river or bay', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water area/Lake, river or bay', 'fill-outline-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water line small scale', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water line medium scale', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water line large scale', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water line/Waterfall', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Water line/Stream or river', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+
+          map.setPaintProperty( 'Marine area/1', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Bathymetry/depth 2 (shallow water)', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Bathymetry/depth 3', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Bathymetry/depth 4', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Bathymetry/depth 5', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Bathymetry/depth 6', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Bathymetry/depth 7 (deep water)', 'fill-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+          map.setPaintProperty( 'Coastline', 'line-color', AColorPicker.parseColor( waterColor, "rgbcss" ) );
+        } )
+
+      })
+
+  </script>
+</body>
+</html>
